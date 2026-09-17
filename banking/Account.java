@@ -17,27 +17,3 @@ public class Account {
         System.out.println("Balance: " + balance);
     }
 }
-
-class SavingsAccount extends Account {
-    public SavingsAccount(int accountNumber, String holderName, double balance) {
-        super(accountNumber, holderName, balance);
-    }
-
-    @Override
-    public void displayDetails() {
-        System.out.println("Savings Account");
-        super.displayDetails();
-    }
-}
-
-class CurrentAccount extends Account {
-    public CurrentAccount(int accountNumber, String holderName, double balance) {
-        super(accountNumber, holderName, balance);
-    }
-
-    @Override
-    public void displayDetails() {
-        System.out.println("Current Account");
-        super.displayDetails();
-    }
-}
